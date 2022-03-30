@@ -4,11 +4,11 @@ namespace RyanChandler\BladeLinter\Commands;
 
 use Illuminate\Console\Command;
 
-class BladeLinterCommand extends Command
+class LintCommand extends Command
 {
-    public $signature = 'blade-linter';
+    public $signature = 'blade:lint';
 
-    public $description = 'My command';
+    public $description = 'Lint your Blade templates.';
 
     public function handle(): int
     {
