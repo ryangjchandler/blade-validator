@@ -15,4 +15,11 @@ class BladeLinterServiceProvider extends PackageServiceProvider
             ->hasConfigFile()
             ->hasCommand(LintCommand::class);
     }
+
+    public function packageRegistered()
+    {
+        $this->app->singleton(BladeLinter::class, function ($app) {
+            return new BladeLinter($app['config']->get('blade-linter.checks'));
+        });
+    }
 }

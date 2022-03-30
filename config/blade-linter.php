@@ -2,4 +2,8 @@
 
 return [
 
+    'checks' => [
+
+    ],
+
 ];

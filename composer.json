@@ -55,10 +55,7 @@
         "laravel": {
             "providers": [
                 "RyanChandler\\BladeLinter\\BladeLinterServiceProvider"
-            ],
-            "aliases": {
-                "BladeLinter": "RyanChandler\\BladeLinter\\Facades\\BladeLinter"
-            }
+            ]
         }
     },
     "minimum-stability": "dev",
