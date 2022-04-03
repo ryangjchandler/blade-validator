@@ -11,7 +11,7 @@ class BladeLinterServiceProvider extends PackageServiceProvider
     public function configurePackage(Package $package): void
     {
         $package
-            ->name('blade-linter')
+            ->name('blade-validator')
             ->hasConfigFile()
             ->hasCommand(LintCommand::class);
     }
@@ -19,7 +19,7 @@ class BladeLinterServiceProvider extends PackageServiceProvider
     public function packageRegistered()
     {
         $this->app->singleton(BladeLinter::class, function ($app) {
-            return new BladeLinter($app['config']->get('blade-linter.checks'));
+            return new BladeLinter($app['config']->get('blade-validator.checks'));
         });
     }
 }

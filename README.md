@@ -3,16 +3,16 @@
 
 # Run rudimentary linting checks on your Blade templates.
 
-[![Latest Version on Packagist](https://img.shields.io/packagist/v/ryangjchandler/blade-linter.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/blade-linter)
-[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/blade-linter/run-tests?label=tests)](https://github.com/ryangjchandler/blade-linter/actions?query=workflow%3Arun-tests+branch%3Amain)
-[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/blade-linter/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ryangjchandler/blade-linter/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
-[![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/blade-linter.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/blade-linter)
+[![Latest Version on Packagist](https://img.shields.io/packagist/v/ryangjchandler/blade-validator.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/blade-validator)
+[![GitHub Tests Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/blade-validator/run-tests?label=tests)](https://github.com/ryangjchandler/blade-validator/actions?query=workflow%3Arun-tests+branch%3Amain)
+[![GitHub Code Style Action Status](https://img.shields.io/github/workflow/status/ryangjchandler/blade-validator/Check%20&%20fix%20styling?label=code%20style)](https://github.com/ryangjchandler/blade-validator/actions?query=workflow%3A"Check+%26+fix+styling"+branch%3Amain)
+[![Total Downloads](https://img.shields.io/packagist/dt/ryangjchandler/blade-validator.svg?style=flat-square)](https://packagist.org/packages/ryangjchandler/blade-validator)
 
 This is where your description should go. Limit it to a paragraph or two. Consider adding a small example.
 
 ## Support us
 
-[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/blade-linter.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/blade-linter)
+[<img src="https://github-ads.s3.eu-central-1.amazonaws.com/blade-validator.jpg?t=1" width="419px" />](https://spatie.be/github-ad-click/blade-validator)
 
 We invest a lot of resources into creating [best in class open source packages](https://spatie.be/open-source). You can support us by [buying one of our paid products](https://spatie.be/open-source/support-us).
 
@@ -23,20 +23,20 @@ We highly appreciate you sending us a postcard from your hometown, mentioning wh
 You can install the package via composer:
 
 ```bash
-composer require ryangjchandler/blade-linter
+composer require ryangjchandler/blade-validator
 ```
 
 You can publish and run the migrations with:
 
 ```bash
-php artisan vendor:publish --tag="blade-linter-migrations"
+php artisan vendor:publish --tag="blade-validator-migrations"
 php artisan migrate
 ```
 
 You can publish the config file with:
 
 ```bash
-php artisan vendor:publish --tag="blade-linter-config"
+php artisan vendor:publish --tag="blade-validator-config"
 ```
 
 This is the contents of the published config file:
@@ -49,7 +49,7 @@ return [
 Optionally, you can publish the views using
 
 ```bash
-php artisan vendor:publish --tag="blade-linter-views"
+php artisan vendor:publish --tag="blade-validator-views"
 ```
 
 ## Usage

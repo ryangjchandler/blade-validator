@@ -1,12 +1,12 @@
 {
-    "name": "ryangjchandler/blade-linter",
+    "name": "ryangjchandler/blade-validator",
     "description": "Run rudimentary linting checks on your Blade templates.",
     "keywords": [
         "ryangjchandler",
         "laravel",
-        "blade-linter"
+        "blade-validator"
     ],
-    "homepage": "https://github.com/ryangjchandler/blade-linter",
+    "homepage": "https://github.com/ryangjchandler/blade-validator",
     "license": "MIT",
     "authors": [
         {
