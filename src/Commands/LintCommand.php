@@ -2,11 +2,10 @@
 
 namespace RyanChandler\BladeValidator\Commands;
 
-use RyanChandler\BladeValidator\Checks\Error;
-use Illuminate\Support\Str;
 use Illuminate\Console\Command;
-use Symfony\Component\Finder\Finder;
 use RyanChandler\BladeValidator\BladeValidator;
+use RyanChandler\BladeValidator\Checks\Error;
+use Symfony\Component\Finder\Finder;
 use Symfony\Component\Finder\SplFileInfo;
 
 use function Termwind\render;
@@ -57,7 +56,7 @@ class LintCommand extends Command
             $contents = $file->getContents();
 
             $this->errors = array_merge($this->errors, [
-                str($file->getRealPath())->after($path)->trim(DIRECTORY_SEPARATOR)->toString() => $this->linter->process($contents)
+                str($file->getRealPath())->after($path)->trim(DIRECTORY_SEPARATOR)->toString() => $this->linter->process($contents),
             ]);
         });
 

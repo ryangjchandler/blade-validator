@@ -8,7 +8,6 @@ class InvalidDirectives implements Check
 {
     public function __construct(protected BladeCompiler $compiler)
     {
-
     }
 
     public function check(string $source): array

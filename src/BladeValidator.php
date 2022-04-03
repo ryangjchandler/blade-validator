@@ -6,7 +6,6 @@ class BladeValidator
 {
     public function __construct(protected array $checks = [])
     {
-
     }
 
     /**

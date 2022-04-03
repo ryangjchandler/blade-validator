@@ -2,9 +2,9 @@
 
 namespace RyanChandler\BladeValidator;
 
+use RyanChandler\BladeValidator\Commands\LintCommand;
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RyanChandler\BladeValidator\Commands\LintCommand;
 
 class BladeValidatorServiceProvider extends PackageServiceProvider
 {
