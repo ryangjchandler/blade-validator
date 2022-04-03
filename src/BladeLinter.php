@@ -1,8 +1,8 @@
 <?php
 
-namespace RyanChandler\BladeLinter;
+namespace RyanChandler\BladeValidator;
 
-class BladeLinter
+class BladeValidator
 {
     public function __construct(protected array $checks = [])
     {
@@ -10,7 +10,7 @@ class BladeLinter
     }
 
     /**
-     * @param  class-string<\RyanChandler\BladeLinter\Checks\Check>  $check
+     * @param  class-string<\RyanChandler\BladeValidator\Checks\Check>  $check
      * @return $this
      */
     public function registerCheck(string $check): static

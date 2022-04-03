@@ -55,8 +55,8 @@ php artisan vendor:publish --tag="blade-validator-views"
 ## Usage
 
 ```php
-$bladeLinter = new RyanChandler\BladeLinter();
-echo $bladeLinter->echoPhrase('Hello, RyanChandler!');
+$BladeValidator = new RyanChandler\BladeValidator();
+echo $BladeValidator->echoPhrase('Hello, RyanChandler!');
 ```
 
 ## Testing

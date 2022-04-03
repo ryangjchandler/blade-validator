@@ -1,7 +1,7 @@
 <?php
 
-use RyanChandler\BladeLinter\Checks\InvalidDirectives;
-use RyanChandler\BladeLinter\Checks\NoRawEchos;
+use RyanChandler\BladeValidator\Checks\InvalidDirectives;
+use RyanChandler\BladeValidator\Checks\NoRawEchos;
 
 return [
 

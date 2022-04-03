@@ -1,12 +1,12 @@
 <?php
 
-namespace RyanChandler\BladeLinter\Commands;
+namespace RyanChandler\BladeValidator\Commands;
 
-use RyanChandler\BladeLinter\Checks\Error;
+use RyanChandler\BladeValidator\Checks\Error;
 use Illuminate\Support\Str;
 use Illuminate\Console\Command;
 use Symfony\Component\Finder\Finder;
-use RyanChandler\BladeLinter\BladeLinter;
+use RyanChandler\BladeValidator\BladeValidator;
 use Symfony\Component\Finder\SplFileInfo;
 
 use function Termwind\render;
@@ -17,12 +17,12 @@ class LintCommand extends Command
 
     public $description = 'Lint your Blade templates.';
 
-    protected BladeLinter $linter;
+    protected BladeValidator $linter;
 
-    /** @var array<string, \RyanChandler\BladeLinter\Checks\Error[]> */
+    /** @var array<string, \RyanChandler\BladeValidator\Checks\Error[]> */
     protected array $errors = [];
 
-    public function handle(BladeLinter $linter): int
+    public function handle(BladeValidator $linter): int
     {
         $this->linter = $linter;
 

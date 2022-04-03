@@ -1,10 +1,10 @@
 <?php
 
-namespace RyanChandler\BladeLinter\Tests;
+namespace RyanChandler\BladeValidator\Tests;
 
 use Illuminate\Database\Eloquent\Factories\Factory;
 use Orchestra\Testbench\TestCase as Orchestra;
-use RyanChandler\BladeLinter\BladeLinterServiceProvider;
+use RyanChandler\BladeValidator\BladeValidatorServiceProvider;
 
 class TestCase extends Orchestra
 {
@@ -13,14 +13,14 @@ class TestCase extends Orchestra
         parent::setUp();
 
         Factory::guessFactoryNamesUsing(
-            fn (string $modelName) => 'RyanChandler\\BladeLinter\\Database\\Factories\\'.class_basename($modelName).'Factory'
+            fn (string $modelName) => 'RyanChandler\\BladeValidator\\Database\\Factories\\'.class_basename($modelName).'Factory'
         );
     }
 
     protected function getPackageProviders($app)
     {
         return [
-            BladeLinterServiceProvider::class,
+            BladeValidatorServiceProvider::class,
         ];
     }
 

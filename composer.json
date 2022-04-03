@@ -35,13 +35,13 @@
     },
     "autoload": {
         "psr-4": {
-            "RyanChandler\\BladeLinter\\": "src",
-            "RyanChandler\\BladeLinter\\Database\\Factories\\": "database/factories"
+            "RyanChandler\\BladeValidator\\": "src",
+            "RyanChandler\\BladeValidator\\Database\\Factories\\": "database/factories"
         }
     },
     "autoload-dev": {
         "psr-4": {
-            "RyanChandler\\BladeLinter\\Tests\\": "tests"
+            "RyanChandler\\BladeValidator\\Tests\\": "tests"
         }
     },
     "scripts": {
@@ -55,7 +55,7 @@
     "extra": {
         "laravel": {
             "providers": [
-                "RyanChandler\\BladeLinter\\BladeLinterServiceProvider"
+                "RyanChandler\\BladeValidator\\BladeValidatorServiceProvider"
             ]
         }
     },

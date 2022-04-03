@@ -1,12 +1,12 @@
 <?php
 
-namespace RyanChandler\BladeLinter;
+namespace RyanChandler\BladeValidator;
 
 use Spatie\LaravelPackageTools\Package;
 use Spatie\LaravelPackageTools\PackageServiceProvider;
-use RyanChandler\BladeLinter\Commands\LintCommand;
+use RyanChandler\BladeValidator\Commands\LintCommand;
 
-class BladeLinterServiceProvider extends PackageServiceProvider
+class BladeValidatorServiceProvider extends PackageServiceProvider
 {
     public function configurePackage(Package $package): void
     {
@@ -18,8 +18,8 @@ class BladeLinterServiceProvider extends PackageServiceProvider
 
     public function packageRegistered()
     {
-        $this->app->singleton(BladeLinter::class, function ($app) {
-            return new BladeLinter($app['config']->get('blade-validator.checks'));
+        $this->app->singleton(BladeValidator::class, function ($app) {
+            return new BladeValidator($app['config']->get('blade-validator.checks'));
         });
     }
 }

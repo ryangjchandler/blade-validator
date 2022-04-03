@@ -1,5 +1,5 @@
 <?php
 
-use RyanChandler\BladeLinter\Tests\TestCase;
+use RyanChandler\BladeValidator\Tests\TestCase;
 
 uses(TestCase::class)->in(__DIR__);

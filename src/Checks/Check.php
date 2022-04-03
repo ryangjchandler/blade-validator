@@ -1,6 +1,6 @@
 <?php
 
-namespace RyanChandler\BladeLinter\Checks;
+namespace RyanChandler\BladeValidator\Checks;
 
 interface Check
 {
