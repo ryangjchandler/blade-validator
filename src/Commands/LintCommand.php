@@ -13,7 +13,7 @@ use function Termwind\render;
 
 class LintCommand extends Command
 {
-    public $signature = 'blade:lint';
+    public $signature = 'blade:validate';
 
     public $description = 'Lint your Blade templates.';
 
